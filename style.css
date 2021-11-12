@@ -1,0 +1,26 @@
+body{
+    background-color:black ;
+    color:white ;
+    font-family:Arial, Helvetica, sans-serif ;
+    font: size 18px; ;
+}
+input [type="Submit"] {
+    padding:5px 10px 5px 10px;
+    cursor:pointer ;
+}
+input[type="email"]{
+padding:5px 10px 5px 10px;
+}
+input[type="number"]{
+    padding:5px 10px 5px 10px;
+}
+input[type="text"]{
+    padding:5px 10px 5px 10px;
+}
+input{
+    display: block;
+}
+.Box{
+    display: flex;
+    justify-content: center;
+}
