@@ -6,40 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inependent</title>
 
-    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="..bootstrap.css.min">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+  
+    <h1>THE AKAN NAMING SYSTEM</h1>
+<p>This is a website to determine your name based on the day of week you were born.
+    This is a Ghanian naming system.
+    Either male or female would follow as:
+    <p> <strong>MALE</strong> ;Sun-Kwasi,Mon-Kwado,Tue-Kwabena,Wed-Kwaku,Thur-Yaw,Fri-Kofi,Sat-Kwame.
+    <p><strong>FEMALE</strong> ;Sun-Akoswa,Mon-Adwoa,Tue-Abenaa,Wed-Akua,Thur-Yaa,Fri-Afua,Sat-Ama.</p>
+    <h2>ENTER THE INFO</h2>
    <Div class="Box">
     <form action="">
         <label>Name</label>
-        <input type="text" placeholder="Name">
+        <input type="text"id="Name class ="form-control" placeholder="Name">
+        <p id="nameerror"></p>
         <br>
+        <div class="con1">
+            <label >Birth</label>
+            <br>
+            <input type="text" id="Date" placeholder="Date">
+            <input type="text" id="Month" placeholder="Month">
+            <input type="text" id="Year" placeholder="Year">
+        </div>
         <br>
         <label>Gender</label>
-        <input type="text" placeholder="Male">
-        <input type="text" placeholder="female">
-        <br>
-        <br>
-        <label>Age</label>
-        <input type="Number" placeholder="Age">
-        <br>
+        <input type="radio" placeholder="Male">male</input>
+        <input type="radio" placeholder="female">female</input>
         <br>
         <label>Email</label>
         <input type="email" placeholder="Email">
-        <br>
         <br>
         <label>Phone number</label>
         <input type="number" placeholder="Phone number">
         <br>
         <br>
-        <input type="Submit"value="Add info"/>
+        <input type="Button"value="Get Akan name"/>
         
 
     </form>
     
    </Div>
     
+   <script src="js/script.js">
+</script>
 </body>
 </html>

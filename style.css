@@ -24,3 +24,30 @@ input{
     display: flex;
     justify-content: center;
 }
+input[type="radio"]{
+    display: inline;
+    margin-top:5px ;
+}
+h1 {
+text-align: center;
+}
+input[type="number"]{
+    padding:5px 10px 5px 10px;
+}
+h2 {
+    text-align: center;
+    color:blue;
+}
+.con1{
+    display:block-flex;
+    block: size 5px; ;
+    padding:2px 3px 2px 3px ;
+}
+p{
+    text-align: center;
+}
+h1{
+    border:solid red 10px;
+    color: green;
+    margin:1opx;
+}
