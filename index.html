@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,48 +11,60 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-  
+
     <h1>THE AKAN NAMING SYSTEM</h1>
-<p>This is a website to determine your name based on the day of week you were born.
-    This is a Ghanian naming system.
-    Either male or female would follow as:
+    <p>This is a website to determine your name based on the day of week you were born.
+        This is a Ghanian naming system.
+        Either male or female would follow as:
     <p> <strong>MALE</strong> ;Sun-Kwasi,Mon-Kwado,Tue-Kwabena,Wed-Kwaku,Thur-Yaw,Fri-Kofi,Sat-Kwame.
     <p><strong>FEMALE</strong> ;Sun-Akoswa,Mon-Adwoa,Tue-Abenaa,Wed-Akua,Thur-Yaa,Fri-Afua,Sat-Ama.</p>
     <h2>ENTER THE INFO</h2>
-   <Div class="Box">
-    <form action="">
-        <label>Name</label>
-        <input type="text"id="Name class ="form-control" placeholder="Name">
-        <p id="nameerror"></p>
-        <br>
-        <div class="con1">
-            <label >Birth</label>
+    <Div class="Box">
+        <form action="">
+            <label>Name</label>
+            <input type="text" id="Name class=" form-control" placeholder="Name">
+            <p id="nameerror"></p>
             <br>
-            <input type="text" id="Date" placeholder="Date">
-            <input type="text" id="Month" placeholder="Month">
-            <input type="text" id="Year" placeholder="Year">
-        </div>
-        <br>
-        <label>Gender</label>
-        <input type="radio" placeholder="Male">male</input>
-        <input type="radio" placeholder="female">female</input>
-        <br>
-        <label>Email</label>
-        <input type="email" placeholder="Email">
-        <br>
-        <label>Phone number</label>
-        <input type="number" placeholder="Phone number">
-        <br>
-        <br>
-        <input type="Button"value="Get Akan name"/>
-        
+            <div class="con1">
+                <label>Birth</label>
+                <br>
+                <input type="date" id="Date" placeholder="Date">
 
-    </form>
-    
-   </Div>
-    
-   <script src="js/script.js">
-</script>
+            </div>
+            <br>
+            <label>Gender</label>
+            <input type="radio" placeholder="Male">male</input>
+            <input type="radio" placeholder="female">female</input>
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="Email">
+            <br>
+            <label>Phone number</label>
+            <input type="number" placeholder="Phone number">
+            <br>
+            <br>
+            <input type="Button" value="Get Akan name" />
+
+
+        </form>
+
+    </Div>
+
+    <script>
+        //let date of the week
+        var date = new Date();
+        //let month of the week
+        var month = date.getMonth() + 1;
+        //let year 
+        var year = date.getFullYear();
+        //get date
+        var dte = date.getDate();
+        //var todays date=dte-+month-+year
+        console.log(dte + "-" + month + "-" + year);
+
+    </script>
 </body>
+
 </html>
