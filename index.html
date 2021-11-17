@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inependent</title>
 
-    <link rel="stylesheet" href="..bootstrap.css.min">
+    <!-- <link rel="stylesheet" href="/bootstrap.css.min"> -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -24,47 +24,39 @@
     <Div class="Box">
         <form action="">
             <label>Name</label>
-            <input type="text" id="Name class=" form-control" placeholder="Name">
+            <input type="text" id="Name" class=" form-control" placeholder="Name">
             <p id="nameerror"></p>
             <br>
             <div class="con1">
-                <label>Birth</label>
+                <label>Date</label>
                 <br>
-                <input type="date" id="Date" placeholder="Date">
+                <input type="number" id="day" placeholder="Day">
+                <br>
+                <input type="number" id="month" placeholder="Month">
+                <br>
+                <input type="number" id="year" placeholder="Year">
 
             </div>
             <br>
             <label>Gender</label>
-            <input type="radio" placeholder="Male">male</input>
-            <input type="radio" placeholder="female">female</input>
+            <input type="radio" placeholder="Male" id="male">male</input>
+            <input type="radio" placeholder="female"id="female">female</input>
             <br>
             <label>Email</label>
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email"id="Email">
             <br>
             <label>Phone number</label>
-            <input type="number" placeholder="Phone number">
+            <input type="number" placeholder="Phone number"id="Phone number">
             <br>
             <br>
-            <input type="Button" value="Get Akan name" />
+            <input type="Button" value="Get Akan name" class="btn btn-primary btn-lg" onclick="code()" />
 
 
         </form>
 
     </Div>
 
-    <script>
-        //let date of the week
-        var date = new Date();
-        //let month of the week
-        var month = date.getMonth() + 1;
-        //let year 
-        var year = date.getFullYear();
-        //get date
-        var dte = date.getDate();
-        //var todays date=dte-+month-+year
-        console.log(dte + "-" + month + "-" + year);
-
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

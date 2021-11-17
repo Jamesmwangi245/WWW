@@ -40,7 +40,7 @@ h2 {
 }
 .con1{
     display:block-flex;
-    block: size 5px; ;
+    border: size 5px; ;
     padding:2px 3px 2px 3px ;
 }
 p{
